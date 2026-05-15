@@ -66,6 +66,9 @@ Saved trained model and scaler using Joblib.
 
 ## Project Structure
 
+## Project Structure
+
+```txt
 sensor-fault-detection/
 │
 ├── data/
@@ -82,6 +85,7 @@ sensor-fault-detection/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
 
 ---
 
