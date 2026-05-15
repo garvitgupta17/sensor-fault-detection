@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Load trained model
-model = joblib.load("/Users/apple/Desktop/Minor Project/code/random_forest_model.pkl")
+model = joblib.load("models/random_forest_model.pkl")
 
 st.title("Sensor Fault Detection System")
 
@@ -13,7 +13,7 @@ if uploaded_file:
     df = pd.read_csv(uploaded_file)
     X = df[[col for col in df.columns if 'sensor' in col]]
 
-    scaler = joblib.load("scaler.pkl")
+    scaler = joblib.load("models/scaler.pkl")
     X = scaler.transform(X)
     
     predictions = model.predict(X)
