@@ -1,0 +1,7 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+cleaned_nasa_sensor_data.csv
